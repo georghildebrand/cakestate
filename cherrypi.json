@@ -1,0 +1,19 @@
+{
+    "name": "cherry pi",
+    "duration": 30,
+    "ingredients": {
+        "Cherries": "100 g",
+        "Flour": "500 g",
+        "Butter": "250 g",
+        "Sugar": "100 g",
+        "Orange Juice": "100 mltr",
+        "Cream": "100 mltr"
+    },
+    "parallel_steps": {
+        "1": {"in":["Flour","Butter","Sugar"], "out": "baked dough"},
+        "2": {"in":["Cherries","Orange Juice","Cream"], "out": "finished cream"},
+        "3": {"in": ["baked dough", "finished cream"], "out": "finished cake"},
+        "4": {"in": ["finished cake"], "out": "cake delivery"}
+    }
+
+   }
