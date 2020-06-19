@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "msg1",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "doughqueue",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "msgout",
+      "queueName": "finishedcake",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}
